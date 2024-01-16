@@ -511,41 +511,41 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named helloworld
+# Target rules for targets named ceres-tuto
 
 # Build rule for target.
-helloworld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloworld
-.PHONY : helloworld
+ceres-tuto: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ceres-tuto
+.PHONY : ceres-tuto
 
 # fast build rule for target.
-helloworld/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
+ceres-tuto/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ceres-tuto.dir/build.make CMakeFiles/ceres-tuto.dir/build
+.PHONY : ceres-tuto/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/2D_pose_graph/2d_slam.o: src/2D_pose_graph/2d_slam.cpp.o
+.PHONY : src/2D_pose_graph/2d_slam.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/2D_pose_graph/2d_slam.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ceres-tuto.dir/build.make CMakeFiles/ceres-tuto.dir/src/2D_pose_graph/2d_slam.cpp.o
+.PHONY : src/2D_pose_graph/2d_slam.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/2D_pose_graph/2d_slam.i: src/2D_pose_graph/2d_slam.cpp.i
+.PHONY : src/2D_pose_graph/2d_slam.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/2D_pose_graph/2d_slam.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ceres-tuto.dir/build.make CMakeFiles/ceres-tuto.dir/src/2D_pose_graph/2d_slam.cpp.i
+.PHONY : src/2D_pose_graph/2d_slam.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/2D_pose_graph/2d_slam.s: src/2D_pose_graph/2d_slam.cpp.s
+.PHONY : src/2D_pose_graph/2d_slam.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/2D_pose_graph/2d_slam.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ceres-tuto.dir/build.make CMakeFiles/ceres-tuto.dir/src/2D_pose_graph/2d_slam.cpp.s
+.PHONY : src/2D_pose_graph/2d_slam.cpp.s
 
 # Help Target
 help:
@@ -586,10 +586,10 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... helloworld"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... ceres-tuto"
+	@echo "... src/2D_pose_graph/2d_slam.o"
+	@echo "... src/2D_pose_graph/2d_slam.i"
+	@echo "... src/2D_pose_graph/2d_slam.s"
 .PHONY : help
 
 
