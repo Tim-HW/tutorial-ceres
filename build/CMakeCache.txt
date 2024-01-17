@@ -56,9 +56,6 @@ BLAS_mkl_rt_LIBRARY:FILEPATH=BLAS_mkl_rt_LIBRARY-NOTFOUND
 //Path to a library.
 BLAS_openblas_LIBRARY:FILEPATH=BLAS_openblas_LIBRARY-NOTFOUND
 
-//Build the testing tree.
-BUILD_TESTING:BOOL=ON
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -193,22 +190,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ceres-tuto
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.1.0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=1
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
-
-//Value Computed by CMake
-CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+CMAKE_PROJECT_NAME:STATIC=tuto-ceres
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -275,67 +257,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Path to the coverage program that CTest uses for performing coverage
-// inspection
-COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
-
-//Extra command line flags to pass to the coverage tool
-COVERAGE_EXTRA_FLAGS:STRING=-l
-
-//Enable to build Debian packages
-CPACK_BINARY_DEB:BOOL=OFF
-
-//Enable to build FreeBSD packages
-CPACK_BINARY_FREEBSD:BOOL=OFF
-
-//Enable to build IFW packages
-CPACK_BINARY_IFW:BOOL=OFF
-
-//Enable to build NSIS packages
-CPACK_BINARY_NSIS:BOOL=OFF
-
-//Enable to build RPM packages
-CPACK_BINARY_RPM:BOOL=OFF
-
-//Enable to build STGZ packages
-CPACK_BINARY_STGZ:BOOL=ON
-
-//Enable to build TBZ2 packages
-CPACK_BINARY_TBZ2:BOOL=OFF
-
-//Enable to build TGZ packages
-CPACK_BINARY_TGZ:BOOL=ON
-
-//Enable to build TXZ packages
-CPACK_BINARY_TXZ:BOOL=OFF
-
-//Enable to build TZ packages
-CPACK_BINARY_TZ:BOOL=ON
-
-//Enable to build RPM source packages
-CPACK_SOURCE_RPM:BOOL=OFF
-
-//Enable to build TBZ2 source packages
-CPACK_SOURCE_TBZ2:BOOL=ON
-
-//Enable to build TGZ source packages
-CPACK_SOURCE_TGZ:BOOL=ON
-
-//Enable to build TXZ source packages
-CPACK_SOURCE_TXZ:BOOL=ON
-
-//Enable to build TZ source packages
-CPACK_SOURCE_TZ:BOOL=ON
-
-//Enable to build ZIP source packages
-CPACK_SOURCE_ZIP:BOOL=OFF
-
-//How many times to retry timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_COUNT:STRING=3
-
-//How long to wait between timed-out CTest submissions.
-CTEST_SUBMIT_RETRY_DELAY:STRING=5
-
 //The directory containing a CMake configuration file for CXSparse.
 CXSparse_DIR:PATH=CXSparse_DIR-NOTFOUND
 
@@ -348,14 +269,8 @@ CXSparse_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcxsparse.so
 //The directory containing a CMake configuration file for Ceres.
 Ceres_DIR:PATH=/usr/local/lib/cmake/Ceres
 
-//Maximum time allowed before CTest will kill the test.
-DART_TESTING_TIMEOUT:STRING=1500
-
 //The directory containing a CMake configuration file for Eigen3.
 Eigen3_DIR:PATH=/usr/local/share/eigen3/cmake
-
-//Path to a program.
-GITCOMMAND:FILEPATH=/usr/bin/git
 
 //Path to a file.
 GLOG_INCLUDE_DIR:PATH=/usr/include
@@ -393,15 +308,6 @@ LAPACK_scs_LIBRARY:FILEPATH=LAPACK_scs_LIBRARY-NOTFOUND
 //Path to a library.
 LAPACK_vecLib_LIBRARY:FILEPATH=LAPACK_vecLib_LIBRARY-NOTFOUND
 
-//Command to build the project
-MAKECOMMAND:STRING=/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
-
-//Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=/usr/bin/cuda-memcheck
-
-//File that contains suppressions for the memory checker
-MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
-
 //METIS include directory
 METIS_INCLUDE_DIR:PATH=METIS_INCLUDE_DIR-NOTFOUND
 
@@ -410,9 +316,6 @@ METIS_LIBRARY_DEBUG:FILEPATH=METIS_LIBRARY_DEBUG-NOTFOUND
 
 //METIS release library
 METIS_LIBRARY_RELEASE:FILEPATH=METIS_LIBRARY_RELEASE-NOTFOUND
-
-//Name of the computer/site where compile is being run
-SITE:STRING=dream-laptop
 
 //Path to a file.
 SuiteSparse_AMD_INCLUDE_DIR:PATH=/usr/include/suitesparse
@@ -462,17 +365,17 @@ SuiteSparse_SPQR_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libspqr.so
 //The directory containing a CMake configuration file for TBB.
 TBB_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/TBB
 
-//Value Computed by CMake
-ceres-tuto_BINARY_DIR:STATIC=/home/tim/DREAM/test/build
-
-//Value Computed by CMake
-ceres-tuto_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-ceres-tuto_SOURCE_DIR:STATIC=/home/tim/DREAM/test
-
 //The directory containing a CMake configuration file for gflags.
 gflags_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gflags
+
+//Value Computed by CMake
+tuto-ceres_BINARY_DIR:STATIC=/home/tim/DREAM/test/build
+
+//Value Computed by CMake
+tuto-ceres_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+tuto-ceres_SOURCE_DIR:STATIC=/home/tim/DREAM/test
 
 
 ########################
@@ -529,8 +432,6 @@ CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 CMAKE_COMMAND:INTERNAL=/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/local/lib/python3.8/dist-packages/cmake/data/bin/cpack
-//ADVANCED property for variable: CMAKE_CTEST_COMMAND
-CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/local/lib/python3.8/dist-packages/cmake/data/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
@@ -664,60 +565,16 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_COMMAND
-COVERAGE_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
-COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_DEB
-CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_FREEBSD
-CPACK_BINARY_FREEBSD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_IFW
-CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_NSIS
-CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_RPM
-CPACK_BINARY_RPM-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_STGZ
-CPACK_BINARY_STGZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TBZ2
-CPACK_BINARY_TBZ2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TGZ
-CPACK_BINARY_TGZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TXZ
-CPACK_BINARY_TXZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TZ
-CPACK_BINARY_TZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_RPM
-CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TBZ2
-CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TGZ
-CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TXZ
-CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TZ
-CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_ZIP
-CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
-CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
-CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CXSparse_INCLUDE_DIR
 CXSparse_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CXSparse_LIBRARY
 CXSparse_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: DART_TESTING_TIMEOUT
-DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding CXSparse
 FIND_PACKAGE_MESSAGE_DETAILS_CXSparse:INTERNAL=[/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libcxsparse.so][v3.2.0(3.2.0)]
 //Details about finding SuiteSparse
 FIND_PACKAGE_MESSAGE_DETAILS_SuiteSparse:INTERNAL=[/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libamd.so][/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libcamd.so][/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libccolamd.so][/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libcholmod.so][/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libcolamd.so][/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libspqr.so][/usr/include/suitesparse][/usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so][cfound components: AMD CAMD CCOLAMD CHOLMOD COLAMD SPQR Config ][v5.7.1(5.7.1)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//ADVANCED property for variable: GITCOMMAND
-GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLOG_INCLUDE_DIR
 GLOG_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLOG_LIBRARY
@@ -748,20 +605,12 @@ LAPACK_openblas_LIBRARY-ADVANCED:INTERNAL=1
 LAPACK_scs_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LAPACK_vecLib_LIBRARY
 LAPACK_vecLib_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MAKECOMMAND
-MAKECOMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_COMMAND
-MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
-MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: METIS_INCLUDE_DIR
 METIS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: METIS_LIBRARY_DEBUG
 METIS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: METIS_LIBRARY_RELEASE
 METIS_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: SITE
-SITE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SuiteSparse_AMD_INCLUDE_DIR
 SuiteSparse_AMD_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SuiteSparse_AMD_LIBRARY
