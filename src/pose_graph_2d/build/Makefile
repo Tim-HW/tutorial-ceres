@@ -116,6 +116,43 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named pose_graph_2d
+
+# Build rule for target.
+pose_graph_2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pose_graph_2d
+.PHONY : pose_graph_2d
+
+# fast build rule for target.
+pose_graph_2d/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_graph_2d.dir/build.make CMakeFiles/pose_graph_2d.dir/build
+.PHONY : pose_graph_2d/fast
+
+pose_graph_2d.o: pose_graph_2d.cc.o
+.PHONY : pose_graph_2d.o
+
+# target to build an object file
+pose_graph_2d.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_graph_2d.dir/build.make CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o
+.PHONY : pose_graph_2d.cc.o
+
+pose_graph_2d.i: pose_graph_2d.cc.i
+.PHONY : pose_graph_2d.i
+
+# target to preprocess a source file
+pose_graph_2d.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_graph_2d.dir/build.make CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.i
+.PHONY : pose_graph_2d.cc.i
+
+pose_graph_2d.s: pose_graph_2d.cc.s
+.PHONY : pose_graph_2d.s
+
+# target to generate assembly for a file
+pose_graph_2d.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pose_graph_2d.dir/build.make CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.s
+.PHONY : pose_graph_2d.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... pose_graph_2d"
+	@echo "... pose_graph_2d.o"
+	@echo "... pose_graph_2d.i"
+	@echo "... pose_graph_2d.s"
 .PHONY : help
 
 

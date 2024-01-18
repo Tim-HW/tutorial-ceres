@@ -1,4 +1,8 @@
-/home/tim/DREAM/test/build/CMakeFiles/tuto-ceres.dir
+/home/tim/DREAM/test/build/CMakeFiles/helloworld.dir
+/home/tim/DREAM/test/build/CMakeFiles/powell.dir
+/home/tim/DREAM/test/build/CMakeFiles/curve_fitting.dir
+/home/tim/DREAM/test/build/CMakeFiles/helloworld_analytic_diff.dir
+/home/tim/DREAM/test/build/CMakeFiles/helloworld_numeric_diff.dir
 /home/tim/DREAM/test/build/CMakeFiles/edit_cache.dir
 /home/tim/DREAM/test/build/CMakeFiles/rebuild_cache.dir
 /home/tim/DREAM/test/build/src/pose_graph_2d/CMakeFiles/edit_cache.dir

@@ -369,6 +369,15 @@ TBB_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/TBB
 gflags_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gflags
 
 //Value Computed by CMake
+pose_graph_2d_BINARY_DIR:STATIC=/home/tim/DREAM/test/build/src/pose_graph_2d
+
+//Value Computed by CMake
+pose_graph_2d_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+pose_graph_2d_SOURCE_DIR:STATIC=/home/tim/DREAM/test/src/pose_graph_2d
+
+//Value Computed by CMake
 tuto-ceres_BINARY_DIR:STATIC=/home/tim/DREAM/test/build
 
 //Value Computed by CMake
