@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o"
-  "CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o.d"
+  "CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o"
+  "CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o.d"
   "pose_graph_2d"
   "pose_graph_2d.pdb"
 )

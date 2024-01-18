@@ -69,28 +69,28 @@ include CMakeFiles/pose_graph_2d.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pose_graph_2d.dir/flags.make
 
-CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o: CMakeFiles/pose_graph_2d.dir/flags.make
-CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o: /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cc
-CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o: CMakeFiles/pose_graph_2d.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tim/DREAM/test/src/pose_graph_2d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o -MF CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o.d -o CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o -c /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cc
+CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o: CMakeFiles/pose_graph_2d.dir/flags.make
+CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o: /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cpp
+CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o: CMakeFiles/pose_graph_2d.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/tim/DREAM/test/src/pose_graph_2d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o -MF CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o.d -o CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o -c /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cpp
 
-CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cc > CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.i
+CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cpp > CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.i
 
-CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cc -o CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.s
+CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tim/DREAM/test/src/pose_graph_2d/pose_graph_2d.cpp -o CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.s
 
 # Object files for target pose_graph_2d
 pose_graph_2d_OBJECTS = \
-"CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o"
+"CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o"
 
 # External object files for target pose_graph_2d
 pose_graph_2d_EXTERNAL_OBJECTS =
 
-pose_graph_2d: CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cc.o
+pose_graph_2d: CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o
 pose_graph_2d: CMakeFiles/pose_graph_2d.dir/build.make
 pose_graph_2d: /usr/local/lib/libceres.a
 pose_graph_2d: /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2

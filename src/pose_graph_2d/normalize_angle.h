@@ -32,8 +32,8 @@
 #define CERES_EXAMPLES_POSE_GRAPH_2D_NORMALIZE_ANGLE_H_
 
 #include <cmath>
-
 #include "ceres/ceres.h"
+
 
 namespace ceres::examples {
 
@@ -41,9 +41,9 @@ namespace ceres::examples {
 template <typename T>
 inline T NormalizeAngle(const T& angle_radians) {
   // Use ceres::floor because it is specialized for double and Jet types.
-  T two_pi(2.0 * constants::pi);
+  T two_pi(2.0 * 3.14);
   return angle_radians -
-         two_pi * ceres::floor((angle_radians + T(constants::pi)) / two_pi);
+         two_pi * ceres::floor((angle_radians + T(3.14)) / two_pi);
 }
 
 }  // namespace ceres::examples
