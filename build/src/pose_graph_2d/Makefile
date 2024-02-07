@@ -57,10 +57,10 @@ RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tim/DREAM/test
+CMAKE_SOURCE_DIR = /home/tim/DREAM/ceres-tuto
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tim/DREAM/test/build
+CMAKE_BINARY_DIR = /home/tim/DREAM/ceres-tuto/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tim/DREAM/test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tim/DREAM/test/build/CMakeFiles /home/tim/DREAM/test/build/src/pose_graph_2d//CMakeFiles/progress.marks
-	cd /home/tim/DREAM/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/DREAM/test/build/CMakeFiles 0
+	cd /home/tim/DREAM/ceres-tuto/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tim/DREAM/ceres-tuto/build/CMakeFiles /home/tim/DREAM/ceres-tuto/build/src/pose_graph_2d//CMakeFiles/progress.marks
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tim/DREAM/ceres-tuto/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tim/DREAM/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/clean
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,18 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tim/DREAM/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/preinstall
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tim/DREAM/test/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/preinstall
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tim/DREAM/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tim/DREAM/ceres-tuto/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/rule:
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/rule
+.PHONY : src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/rule
+
+# Convenience name for target.
+pose_graph_2d: src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/rule
+.PHONY : pose_graph_2d
+
+# fast build rule for target.
+pose_graph_2d/fast:
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/build.make src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/build
+.PHONY : pose_graph_2d/fast
+
+pose_graph_2d.o: pose_graph_2d.cpp.o
+.PHONY : pose_graph_2d.o
+
+# target to build an object file
+pose_graph_2d.cpp.o:
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/build.make src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.o
+.PHONY : pose_graph_2d.cpp.o
+
+pose_graph_2d.i: pose_graph_2d.cpp.i
+.PHONY : pose_graph_2d.i
+
+# target to preprocess a source file
+pose_graph_2d.cpp.i:
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/build.make src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.i
+.PHONY : pose_graph_2d.cpp.i
+
+pose_graph_2d.s: pose_graph_2d.cpp.s
+.PHONY : pose_graph_2d.s
+
+# target to generate assembly for a file
+pose_graph_2d.cpp.s:
+	cd /home/tim/DREAM/ceres-tuto/build && $(MAKE) $(MAKESILENT) -f src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/build.make src/pose_graph_2d/CMakeFiles/pose_graph_2d.dir/pose_graph_2d.cpp.s
+.PHONY : pose_graph_2d.cpp.s
 
 # Help Target
 help:
@@ -124,6 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... pose_graph_2d"
+	@echo "... pose_graph_2d.o"
+	@echo "... pose_graph_2d.i"
+	@echo "... pose_graph_2d.s"
 .PHONY : help
 
 
@@ -135,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tim/DREAM/test/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tim/DREAM/ceres-tuto/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/tim/DREAM/test/src/pose_graph_2d
+# Install script for directory: /home/tim/DREAM/ceres-tuto/src/pose_graph_2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
